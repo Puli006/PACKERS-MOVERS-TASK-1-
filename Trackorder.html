@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order</title>
+    <style>
+      
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('Trackorder.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent header */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header nav ul li {
+            margin-left: 1rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    
+        .track-order-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for the container */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-order-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .track-order-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .track-order-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .track-order-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .track-order-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+   
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent footer */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HARI PACKERS AND MOVERS</h1>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="track-order-container">
+            <h2>Track Your Order</h2>
+            <form class="track-order-form" action="#" method="post">
+                <label for="trackingNumber">Tracking Number:</label>
+                <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter your tracking number" required>
+                
+                <label for="mobileNumber">Registered Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your registered mobile number" required>
+                
+                <input type="submit" value="Track Order">
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Hari Packers and Movers</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONTACT PAGE</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                width: 100%;
+                background-color: darkslategrey;
+                padding: 50px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .box {
+                width: 800px;
+                margin: 40px auto;
+                padding: 20px;
+                background-color: aliceblue;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+            .header {
+                background-color: blueviolet;
+                color: aliceblue;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            .form {
+                margin-top: 20px;       
+            }
+            .form label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            .form input,
+            .form textarea {
+                width: calc(100% - 20px);
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .form input[type="submit"] {
+                background-color: blueviolet;
+                color: white;
+                cursor: pointer;
+                border: none;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .form input[type="submit"]:hover {
+                background-color: darkviolet;
+            }
+            .contact-info {
+                margin-top: 40px;
+                color: white;
+                text-align: center;
+            }
+            .contact-info h2 {
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+            .contact-info p {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="header">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+        <div class="contact-info">
+            <h2>Alternative Contact Info</h2>
+            <p><strong>Name:</strong> Puli Hari Teja</p>
+            <p><strong>Phone:</strong> +91-1234567890</p>
+            <p><strong>Email:</strong> pulihariteja@gmail.com</p>
+            <p><strong>Address:</strong> 123, Main Street, Addanki, Andhra Pradesh, India</p>
+        </div>
+    </body>
+</html>

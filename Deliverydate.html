@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Delivery Date</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('Deliverydate.jpeg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header nav ul li {
+            margin-left: 1rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .date-change-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .date-change-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .date-change-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .date-change-form input,
+        .date-change-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .date-change-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .date-change-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HARI PACKERS AND MOVERS</h1>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="date-change-container">
+            <h2>Change Your Delivery Date</h2>
+            <form class="date-change-form" action="#" method="post">
+                <label for="trackingNumber">Tracking Number:</label>
+                <input type="text" id="trackingNumber" name="trackingNumber" placeholder="Enter your tracking number" required>
+                
+                <label for="currentDeliveryDate">Current Delivery Date:</label>
+                <input type="date" id="currentDeliveryDate" name="currentDeliveryDate" required>
+                
+                <label for="newDeliveryDate">New Delivery Date:</label>
+                <input type="date" id="newDeliveryDate" name="newDeliveryDate" required>
+                
+                <label for="reason">Reason for Change:</label>
+                <textarea id="reason" name="reason" rows="4" placeholder="Explain the reason for changing the delivery date" required></textarea>
+                
+                <input type="submit" value="Request Date Change">
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Hari Packers and Movers</p>
+    </footer>
+</body>
+</html>
